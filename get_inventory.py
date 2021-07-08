@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 
-'''
-Example custom dynamic inventory script for Ansible, in Python.
-'''
+#'''
+#Example custom dynamic inventory script for Ansible, in Python.
+#'''
 
 import os
 import sys
@@ -42,7 +42,7 @@ class ExampleInventory(object):
                     'ansible_ssh_user': 'centos',
                     'ansible_ssh_private_key_file':
                         '~/.ssh/id_rsa',
-                    'example_variable': 'value'
+                    'ansible_python_interpreter':'/usr/bin/env python'
                 }
             },
             '_meta': {
