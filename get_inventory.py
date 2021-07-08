@@ -37,12 +37,12 @@ class ExampleInventory(object):
     def example_inventory(self):
         return {
             'group': {
-                'hosts': ['51.68.28.210' ],
+                'hosts': ['172.81.179.210' ],
                 'vars': {
-                    'ansible_ssh_user': 'centos',
+                    'ansible_ssh_user': 'ubuntu',
                     'ansible_ssh_private_key_file':
-                        '~/.ssh/id_rsa',
-                    'ansible_python_interpreter':'/usr/bin/env python'
+                        '~/.ssh/id_rsa'
+
                 }
             },
             '_meta': {

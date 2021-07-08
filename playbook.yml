@@ -3,7 +3,7 @@
   become: true
   tasks:
   - name: Install mlocate
-    yum: name=mlocate state=installed
+    apt: name=mlocate state=latest
   - name: Run updatedb
     command: /usr/bin/updatedb
     async: 1800
